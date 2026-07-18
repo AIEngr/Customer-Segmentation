@@ -36,7 +36,7 @@ Computed from the training data (100 customers):
 
 **Silhouette Score: 0.37** — moderate, reasonable cluster separation (0 = overlapping clusters, 1 = well-separated).
 
-> **Honest note:** `Visits_per_Week` is fairly similar across all three segments (4.1–4.5) in this dataset. `Age` and `Average_Spend` are what actually drive the cluster split, with `Promotion_Interest` as a secondary factor. The segment names (Daily/Promotion/Weekend) are descriptive labels chosen when building the notebook, not literal visit-frequency categories — see [Known Issues](#known-issues) for why.
+> **Honest note:** `Visits_per_Week` is fairly similar across all three segments (4.1–4.5) in this dataset. `Age` and `Average_Spend` are what actually drive the cluster split, with `Promotion_Interest` as a secondary factor. The segment names (Daily/Promotion/Weekend) are descriptive labels chosen when building the notebook, not literal visit-frequency categories 
 
 ## Technologies Used
 - Python
