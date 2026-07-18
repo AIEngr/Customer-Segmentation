@@ -64,7 +64,24 @@ Computed from the training data (100 customers):
    ```
 
 ## Usage
- Run the preprocessing and segmentation workflow from the notebook or scripts.
+
+ ### Run the notebook
+ 
+```bash
+jupyter notebook Customer_Segmentation.ipynb
+```
+ 
+Running all cells regenerates the synthetic dataset (fixed seed, so results are reproducible), fits K-Means, evaluates it, and re-saves `kmeans.pkl`.
+ 
+### Run the Streamlit app
+ 
+```bash
+streamlit run app.py
+```
+ 
+Enter a customer's age, average spend, visit frequency, and promotion interest, then click **Assign Segment** to see their predicted group, distance to each cluster center, and where they fall relative to the training data.
+ 
+![App demo](screenshots/app_demo.png)
 
 
 ## Example Workflow
