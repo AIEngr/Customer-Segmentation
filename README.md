@@ -20,7 +20,7 @@ No missing values; all features are numeric, so no categorical encoding is neede
 ## Approach
 
 1. **Elbow method** — SSE plotted across `k = 1` to `10` to sanity-check that 3 clusters is a reasonable choice.
-2. **Clustering** — `KMeans(n_clusters=3, random_state=42)` fit directly on the four raw features. *(No feature scaling was applied — see [Known Issues](#known-issues).)*
+2. **Clustering** — `KMeans(n_clusters=3, random_state=42)` fit directly on the four raw features. 
 3. **Labeling** — clusters mapped to descriptive segment names based on their profile.
 4. **Evaluation** — silhouette score computed to check cluster separation quality.
 
@@ -38,12 +38,6 @@ Computed from the training data (100 customers):
 
 > **Honest note:** `Visits_per_Week` is fairly similar across all three segments (4.1–4.5) in this dataset. `Age` and `Average_Spend` are what actually drive the cluster split, with `Promotion_Interest` as a secondary factor. The segment names (Daily/Promotion/Weekend) are descriptive labels chosen when building the notebook, not literal visit-frequency categories — see [Known Issues](#known-issues) for why.
 
-## Project Structure
-- `data/` - Raw and processed datasets
-- `notebooks/` - Jupyter notebooks for exploration and model development
-- `src/` - Reusable Python scripts for preprocessing, modeling, and visualization
-- `results/` - Outputs such as plots, cluster summaries, and reports
-
 ## Technologies Used
 - Python
 - pandas
@@ -56,7 +50,7 @@ Computed from the training data (100 customers):
 ## Setup
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/AIEngr/Customer-Segmentation.git
    ```
 2. Create and activate a virtual environment:
    ```bash
@@ -70,9 +64,8 @@ Computed from the training data (100 customers):
    ```
 
 ## Usage
-1. Place your customer dataset in the `data/` folder.
-2. Run the preprocessing and segmentation workflow from the notebook or scripts.
-3. Review the generated cluster analysis and visualizations in the `results/` folder.
+ Run the preprocessing and segmentation workflow from the notebook or scripts.
+
 
 ## Example Workflow
 - Load and clean customer data
