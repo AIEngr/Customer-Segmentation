@@ -1,0 +1,67 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env/
+.venv/
+venv/
+ENV/
+env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data files
+*.csv
+*.sqlite
+*.db
+*.h5
+*.hdf5
+*.parquet
+#*.pkl
+*.pickle
+
+# Logs and reports
+*.log
+reports/
+output/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# OneDrive
+~$*
+
+# PyCharm
+*.iml
+
+# dotenv
+.env.local
+.env.*.local
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Coverage
+htmlcov/
+.coverage
+.coverage.*
+
+# Scratch files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
